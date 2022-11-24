@@ -18,11 +18,11 @@ th:object : 커맨드 객체를 지정한다.<br/>
 th:field<br/>
 HTML 태그의 id , name , value 속성을 자동으로 처리해준다.<br/>
 렌더링 전<br/>
-<input type="text" th:field="*{itemName}" /><br/>
+input type="text" th:field="*{itemName}" <br/>
 렌더링 후<br/>
-<input type="text" id="itemName" name="itemName" th:value="*{itemName}" /><br/>
+input type="text" id="itemName" name="itemName" th:value="*{itemName}" <br/>
 <br/><br/>
-th:object="${item}" : <form> 에서 사용할 객체를 지정한다. 선택 변수 식( *{...} )을 적용할 수
+th:object="${item}" : <form> 에서 사용할 객체를 지정한다.<br/> 선택 변수 식( *{...} )을 적용할 수
 있다.<br/>
 th:field="*{itemName}"<br/>
 *{itemName} 는 선택 변수 식을 사용했는데, ${item.itemName} 과 같다. 앞서 th:object 로
