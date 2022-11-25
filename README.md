@@ -22,6 +22,8 @@ input type="text" th:field="*{itemName}" <br/>
 렌더링 후<br/>
 input type="text" id="itemName" name="itemName" th:value="*{itemName}" <br/>
 <br/><br/>
+![image](https://user-images.githubusercontent.com/69129562/203995681-6ec705ee-0348-4f19-92c6-859b0395c1f4.png)
+
 th:object="${item}" : <form> 에서 사용할 객체를 지정한다.<br/> 선택 변수 식( *{...} )을 적용할 수
 있다.<br/>
 th:field="*{itemName}"<br/>
@@ -31,7 +33,11 @@ th:field 는 id , name , value 속성을 모두 자동으로 만들어준다.<br
 id : th:field 에서 지정한 변수 이름과 같다. id="itemName"<br/>
 name : th:field 에서 지정한 변수 이름과 같다. name="itemName"<br/>
 value : th:field 에서 지정한 변수의 값을 사용한다. value=""<br/>
+![image](https://user-images.githubusercontent.com/69129562/203995869-d34ee9df-f37c-4ceb-b9f7-e85e9d6c1a37.png)
+
 <br/><br/>
+![image](https://user-images.githubusercontent.com/69129562/203996401-dc657e3d-51c0-45d1-8adc-a4a5a6dd74d5.png)
+
 HTML checkbox는 선택이 안되면 클라이언트에서 서버로 값 자체를 보내지 않는다.<br/> 수정의 경우에는
 상황에 따라서 이 방식이 문제가 될 수 있다.<br/> 사용자가 의도적으로 체크되어 있던 값을 체크를 해제해도
 저장시 아무 값도 넘어가지 않기 때문에, 서버 구현에 따라서 값이 오지 않은 것으로 판단해서 값을 변경하지
